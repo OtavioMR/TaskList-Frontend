@@ -21,7 +21,7 @@ async function listarTasks() {
 
         tasks.forEach(task => {
             const li = document.createElement("li");
-            li.innerHTML = `<strong>${task.titulo}</strong>: ${task.descricao}`;
+            li.innerHTML = `<strong>${task.id}</strong>. <strong>${task.titulo}</strong>: ${task.descricao}`;
             taskList.appendChild(li);
         });
 
