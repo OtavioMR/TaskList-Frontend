@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../javascript/task.js" defer></script>
+    <title>TaskList</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-md-12 mt-5">
+                <h1 class=" d-flex align-text-center justify-content-center">TaskList</h1>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6 d-flex flex-column align-items-center mb-5">
+                <h3>Criar task:</h3>
+                <p>Título:</p> <input type="text" id="titulo-criar">
+                <p>Descrição:</p> <input type="text" id="descricao-criar">
+                <button onclick="CriarTask()" class="mt-5">Cadastrar</button>
+            </div>
+            <div class="col-md-6 d-flex align-items-center flex-column">
+                <h3 class="grow-4">Minhas tasks:</h3>
+                <ul id="task-list" class="list-group mt-3"></ul>
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>
